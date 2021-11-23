@@ -13,6 +13,8 @@ public class InvoiceMain {
 		  listaCompra.add(new Invoice("Mouse",100300,1,29.9));
 		  listaCompra.add(new Invoice("Pen Drive",100400,2,9.9));
 		  listaCompra.add(new Invoice("Fone de Ouvido",100300,1,149.9));
+		  //construtor padrão - sem passar valores
+		  listaCompra.add(new Invoice());
 		  
 		  
 		  
