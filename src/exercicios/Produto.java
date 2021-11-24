@@ -13,11 +13,11 @@ public class Produto {
 	}
 
 	public String toString() {
-		return   nome+" R$" + valor;
+		return   nome+" R$" + valor + " x"+ qtd;
 	}
 
 
-	public Double calcularDesconto() {
+	public String calcularDesconto() {
 		double precoFinal;
 		
 		if(qtd<=10) {
@@ -34,7 +34,7 @@ public class Produto {
 			//25%
 			precoFinal = valor * (1 - 0.025);
 		}
-		return precoFinal;
+		return String.format("Total: R$%.2f",precoFinal*qtd);
 	}
 	
 }

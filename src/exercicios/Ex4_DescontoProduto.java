@@ -17,7 +17,7 @@ public class Ex4_DescontoProduto {
 
 	public static void main(String[] args) {
 		
-		//interface que recebe uma referemcia para o metedo println
+		//interface que recebe uma referencia para o metodo println
 		Consumer<String> print = System.out::println;
 		
 		//criando a lista de produtos disponiveis
@@ -38,18 +38,26 @@ public class Ex4_DescontoProduto {
 		 List<Produto> listaCompra = new ArrayList<>();
 		 //listaCompra.add(lista.get(0));
 		 	Scanner e = new Scanner(System.in);
-		 	System.out.println("Selecione um item da lista:");
 		 	
-		 		
-		 	
-		 		int prodId = e.nextInt();
-		 
+		 	int prodId;
+		 	do {
+		 		prodId = 0;
+		 		System.out.println("Selecione um item da lista:");
+		 			prodId = e.nextInt();
+		 			
 		 		if(prodId < 0 || prodId>(lista.size()-1)) {
 		 			prodId = -1;
-		 			print.accept("Informe um produto listado:");
+		 			print.accept("Produto não cadastrado");
 		 		}else {
+		 			
+		 			System.out.println("Quantas unidades deseja comprar?");
+		 			lista.get(prodId).qtd = e.nextInt();
+		 			
+		 			print.accept(lista.get(prodId).calcularDesconto());
+		 			
 		 			listaCompra.add(lista.get(prodId));
 		 		}
+		 	}while(prodId == -1);
 		 		
 		 	e.close();
 		 
