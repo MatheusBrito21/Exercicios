@@ -52,9 +52,9 @@ public class Ex4_DescontoProduto {
 		 			
 		 			System.out.println("Quantas unidades deseja comprar?");
 		 			lista.get(prodId).qtd = e.nextInt();
-		 			
+		 			//imprime o produto ja com o desconto total da compra
 		 			print.accept(lista.get(prodId).calcularDesconto());
-		 			
+		 			//adiciona na lista de compra
 		 			listaCompra.add(lista.get(prodId));
 		 		}
 		 	}while(prodId == -1);
