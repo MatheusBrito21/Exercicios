@@ -62,7 +62,7 @@ public class Ex4_DescontoProduto {
 		 	e.close();
 		 
 		//imprime lista de compras
-		listaCompra.forEach(System.out::println);
+		//listaCompra.forEach(System.out::println);
 		 
 
 	}
