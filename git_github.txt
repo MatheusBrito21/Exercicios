@@ -1,0 +1,43 @@
+git e github
+Repositorio: pasta onde será armazenada os arquivos
+
+conceitos tecnicos
+
+branch: ramificação do projeto(a partir da linha cronológica)
+
+commit: postar as alterações no projeto(nova versão)
+
+merge: junção da branch com a linha cronológica principal
+
+remote: enviar o repositório na máquina para o github
+
+push(empurrar): adicionar o repositório atualizado no remote
+
+pull(puxar): pegar um repositório do github para a máquina
+
+
+passo-a-passo
+
+$ git init - inicia um repositorio vazio
+
+$ git add "nome_arquivo"- prepara o arquivo para ser adicionado ao commit
+$ git add . - prepara todos arquivo para serem adicionados ao commit
+
+$ git commit -m "primeiro commit" - atualiza o repositorio
+
+*$ git branch -M "main" - altera o nome da branch principal para main
+
+$ git remote add origin "link-repositorio" - conecta o repositorio local ao repositorio criado no github
+
+$git push -u origin main - empurrar o arquivo para o repositorio
+
+
+$git checkout -b "nova branch" - abre uma nova ramificação a partir da branch principal
+
+$ git checkout main - retorna para a branch principal
+
+$git merge "branch_paralela" - junta a branch paralela à principal
+
+$ git clone link.git - copia um repositório do github para a máquina local
+
+$ git pull - puxar o arquivo atualizado no github para a maquina
