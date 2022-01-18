@@ -6,9 +6,8 @@ public class Data {
 	int ano;
 	
 	Data(){
-		this.dia = 01 ;
-		this.mes = 01;
-		this.ano = 1970;
+		//o metodo This() faz referencia ao construtor Data(int dia,int mes, int ano);
+		this(1,1,1970);
 	}
 	
 	Data(int dia,int mes, int ano){
