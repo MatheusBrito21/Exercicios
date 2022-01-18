@@ -20,6 +20,9 @@ passo-a-passo
 
 $ git init - inicia um repositorio vazio
 
+$ git config --global user.email "email do github"
+$ git config --global user.name "usuario no github"
+
 $ git add "nome_arquivo"- prepara o arquivo para ser adicionado ao commit
 $ git add . - prepara todos arquivo para serem adicionados ao commit
 
