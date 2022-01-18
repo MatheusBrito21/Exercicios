@@ -23,14 +23,12 @@ $ git init - inicia um repositorio vazio
 $ git config --global user.email "email do github"
 $ git config --global user.name "usuario no github"
 
+$ git branch -M "main" - altera o nome da branch principal para main
+$ git remote add origin "link-repositorio" - conecta o repositorio local ao repositorio criado no github
 $ git add "nome_arquivo"- prepara o arquivo para ser adicionado ao commit
 $ git add . - prepara todos arquivo para serem adicionados ao commit
 
 $ git commit -m "primeiro commit" - atualiza o repositorio
-
-*$ git branch -M "main" - altera o nome da branch principal para main
-
-$ git remote add origin "link-repositorio" - conecta o repositorio local ao repositorio criado no github
 
 $git push -u origin main - empurrar o arquivo para o repositorio
 
