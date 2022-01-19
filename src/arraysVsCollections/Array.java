@@ -6,11 +6,11 @@ public class Array {
 		
 		double[] notasJoao = {7.0, 8.5, 6.2,5.5};
 		
-		double[] notasMaria = new double[4];
-		notasMaria[0] = 7.5;
-		notasMaria[1] = 8.5;
-		notasMaria[2] = 9.0;
-		notasMaria[3] = 8.0;
+		double[] notasPedro = new double[4];
+		notasPedro[0] = 7.5;
+		notasPedro[1] = 8.5;
+		notasPedro[2] = 9.0;
+		notasPedro[3] = 8.0;
 		
 		double totalJoao = 0;
 		for(int i =0; i< notasJoao.length;i++) {
@@ -18,13 +18,14 @@ public class Array {
 		}
 		
 		//for(each)
-		double totalMaria = 0;
-		for(double nota: notasMaria ) {
-			totalMaria+=nota;
+		//alteração 19/01/22
+		double totalPedro = 0;
+		for(double nota: notasPedro ) {
+			totalPedro+=nota;
 		}
 		
 		System.out.println(totalJoao/notasJoao.length);
-		System.out.println(totalMaria/notasMaria.length); 
+		System.out.println(totalPedro/notasPedro.length); 
 		
 		
 	}
