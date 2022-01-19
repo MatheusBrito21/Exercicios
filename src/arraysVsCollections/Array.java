@@ -17,8 +17,9 @@ public class Array {
 			totalJoao+=notasJoao[i];
 		}
 		
-		//for(each)
+		
 		//alteração 19/01/22
+		//teste de upload
 		double totalPedro = 0;
 		for(double nota: notasPedro ) {
 			totalPedro+=nota;
