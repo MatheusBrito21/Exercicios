@@ -7,16 +7,14 @@ public class ConjuntoComportado {
 	public static void main(String[] args) {
 	//LinkedHashSet<>() - ordem de insercao
 	//TreeSet<>() - ordem alfabetica-numerica
-	//HashSet<>() - ordem aleat√≥ria
+	//HashSet<>() - ordem aleatÛria
 		
 		Set<String> alunos = new TreeSet<>();
 		
-		alunos.add("Jo√£o");
-		alunos.add("Maria");
+		alunos.add("Jo„o");
+		alunos.add("Maria"); 
 		alunos.add("Brenda");
 		alunos.add("Aline");
-		//adicionando pelo arquivo no github
-		alunos.add("Matheus");
 		
 		//for(each)
 		System.out.println("For(each)...");
