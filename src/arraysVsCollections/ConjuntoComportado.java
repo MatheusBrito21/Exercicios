@@ -17,6 +17,8 @@ public class ConjuntoComportado {
 		alunos.add("Aline");
 		//adicionando pelo arquivo no github
 		alunos.add("Matheus");
+		//teste 2 adiionar pelo git
+		alunos.add("Leonardo");
 		
 		//for(each)
 		System.out.println("For(each)...");
