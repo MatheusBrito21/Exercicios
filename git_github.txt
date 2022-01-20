@@ -42,3 +42,23 @@ $git merge "branch_paralela" - junta a branch paralela à principal
 $ git clone link.git - copia um repositório do github para a máquina local
 
 $ git pull - puxar o arquivo atualizado no github para a maquina
+
+ERRO DE MERGE
+
+ Merging is not possible because you have unmerged files.
+
+
+O que está acontecendo atualmente é que você possui um determinado conjunto
+de arquivos que tentou mesclar anteriormente, mas eles geraram conflitos de mesclagem. 
+Idealmente, se alguém tiver um conflito de mesclagem, ele deve resolvê-los manualmente 
+e confirmar as alterações usando git add file.name && git commit -m "removed merge conflicts".
+Agora, outro usuário atualizou os arquivos em questão em seu repositório e transferiu suas alterações para o repositório upstream comum.
+
+Acontece que seus conflitos de mesclagem (provavelmente) da última confirmação não foram
+resolvidos; portanto, seus arquivos não são mesclados corretamente e, portanto, 
+o sinalizador U( unmerged) para os arquivos. Então agora, quando você faz um git pull, 
+o git está exibindo o erro, porque você tem alguma versão do arquivo, que não foi resolvida corretamente.
+
+Para resolver isso, você precisará resolver os conflitos de mesclagem em questão e adicionar e
+confirmar as alterações antes de poder fazer a git pull.
+
