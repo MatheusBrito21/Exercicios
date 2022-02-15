@@ -20,9 +20,13 @@ public class Aluno {
 		return media;
 	}
 	
-	String imprimirResultado() {
-		String resultado = String.format("%s - %.1f - ", nome, calcularMedia());
-		return resultado ;
+	StringBuilder imprimirResultado() {
+		String notaAluno = String.format("%s - %.1f - ", nome, calcularMedia());
+		String statusAluno = calcularMedia()>=7?"Aprovado":"Reprovado"; 
+		StringBuilder resulFinal = new StringBuilder();
+		resulFinal.append(notaAluno).append(statusAluno);
+		
+		return resulFinal ;
 	}
 
 }
