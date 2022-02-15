@@ -19,7 +19,7 @@ public class AlunoTeste {
 		alunos.add(new Aluno("Liza", 7.3,10));
 		
 		
-		Connsumer<Aluno> resul = a -> System.out.println(a.imprimirResultado());
+		Consumer<Aluno> resul = a -> System.out.println(a.imprimirResultado());
 		
 		alunos.stream().forEach(resul);
 		
