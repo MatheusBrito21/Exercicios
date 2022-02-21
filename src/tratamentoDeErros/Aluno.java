@@ -1,4 +1,4 @@
-package streamAPI;
+package tratamentoDeErros;
 
 public class Aluno {
 	
