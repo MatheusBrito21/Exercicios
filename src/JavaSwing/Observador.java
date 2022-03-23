@@ -27,7 +27,7 @@ public class Observador {
 //		});
 		
 		botao.addActionListener(new ActionListener() {
-			
+			 
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Evento ocorreu!");
 			}
