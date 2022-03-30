@@ -1,4 +1,4 @@
-package jdbc;
+package jdbc.curso;
 
 public class Pessoa {
 	private int cod;

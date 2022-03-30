@@ -1,4 +1,4 @@
-package jdbc;
+package jdbc.curso;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -22,6 +22,6 @@ public class CriarTabelaPessoas {
 		conexao.close();
 		System.out.println("Conexao finalizada!");
 		
-		
+	
 	}
 }
