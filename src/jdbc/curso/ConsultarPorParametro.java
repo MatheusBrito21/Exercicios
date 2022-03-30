@@ -22,6 +22,7 @@ public class ConsultarPorParametro {
 		String sql = "SELECT * FROM PESSOAS WHERE NOME LIKE ?";
 		
 		PreparedStatement stmt = conexao.prepareStatement(sql);
+		//seta o valor do ? no comando sql
 		stmt.setString(1,"%" + valor +"%" );
 		ResultSet resultado = stmt.executeQuery();
 		
