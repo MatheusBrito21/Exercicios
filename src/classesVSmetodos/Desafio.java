@@ -1,7 +1,7 @@
 package classesVSmetodos;
 
 public class Desafio {
-	//este é um atributo de instancia
+	//este ï¿½ um atributo de instancia
 	//so pode ser acessado por uma instancia de Desafio
 	int a = 2;
 	//atributo de Classe
